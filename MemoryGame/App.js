@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("You Got A Match")
             cards[optionOneId].setAttribute('src', 'images/white.png')
             cards[optionTwoId].setAttribute('src', 'images/white.png')
+            //once a pair is successfully matched you cant re click it like before 
             cards[optionOneId].removeEventListener("click", flipCard); 
             cards[optionTwoId].removeEventListener("click", flipCard);
             cardsWon.push(cardsChosen)
